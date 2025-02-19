@@ -1,0 +1,39 @@
+.conteiner{
+    background-color: var(--background);
+    border-radius: 8px;
+    width: 95vw;
+    max-width: 900px;
+    padding: 10px;
+    justify-self: center;
+    overflow-x: scroll;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--foreground);
+}
+
+.tabela{
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--background);
+    cursor: pointer;
+    
+}
+
+.tabela th{
+    background-color: var(--foreground);
+    color: var(--background);
+    border: 1px solid var(--background);
+}
+
+.tabela td{
+    border: 1px solid var(--foreground);
+    padding: 10px;
+    text-align: left;
+}
+.tabela tbody tr:hover{
+    background-color: var(--backhover);
+
+
+}

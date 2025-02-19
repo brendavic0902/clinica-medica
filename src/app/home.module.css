@@ -1,0 +1,26 @@
+.img{
+    border-radius: 40px;
+    display: block;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+
+.parag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    size: 20px;
+    display: flex;
+    text-align: center;
+
+  }
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(11, 30, 110);
+  }
+  
