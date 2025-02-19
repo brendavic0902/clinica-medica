@@ -37,7 +37,7 @@ export default function Afis() {
     return (
         <div className={styles.conteiner}>
             <h1 className={styles.titulo}>Lista de Médicos</h1>
-            <input onChange={(e) => setNome(e.target.value)} ></input><h1 >Clica ai men</h1>
+            <input onChange={(e) => setNome(e.target.value)} ></input><h1 >Buscar Médicos</h1>
             <table className={styles.tabela}>
                 <thead>
                     <tr>
