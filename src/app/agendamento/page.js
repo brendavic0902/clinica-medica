@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './agenda.module.css';
 
 function Agendamento() {
@@ -10,40 +10,13 @@ function Agendamento() {
   const [tipo, setTipo] = useState('');
   const [mensagem, setMensagem] = useState('');
 
-  useEffect(() => {
-    getPacientes();
-    getMedicos();
-  }, []);
-
-  const getPacientes = async () => {
-    try {
-      let response = await fetch('URL_API_PACIENTES');
-      if (!response.ok) {
-        throw new Error('Erro ao buscar pacientes: ' + response.statusText);
-      }
-      let data = await response.json();
-      setPacientes(data);
-    } catch (error) {
-      console.error('Erro ao buscar pacientes:', error);
-    }
-  };
-
-  const getMedicos = async () => {
-    try {
-      let response = await fetch('URL_API_MEDICOS');
-      if (!response.ok) {
-        throw new Error('Erro ao buscar médicos: ' + response.statusText);
-      }
-      let data = await response.json();
-      setMedicos(data);
-    } catch (error) {
-      console.error('Erro ao buscar médicos:', error);
-    }
-  };
-
+  const pacientes = ['Paciente 1', 'Paciente 2', 'Paciente 3'];
+  const medicos = ['Médico 1', 'Médico 2', 'Médico 3'];
   const tipos = ['Consulta', 'Exame', 'Retorno'];
   const horas = ['08:00', '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'];
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
    
     if (!paciente || !medico || !data || !hora || !tipo) {
@@ -112,6 +85,6 @@ function Agendamento() {
       </form>
     </div>
   );
-
+}
 
 export default Agendamento;
