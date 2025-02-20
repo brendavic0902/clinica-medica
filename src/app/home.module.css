@@ -24,3 +24,34 @@
     color: rgb(11, 30, 110);
   }
   
+  .botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  
+  .botaoVerde {
+    background-color: #0a1b7e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  
+  }
+  
+  .botaoVerde:hover {
+    background-color: #09024b;
+  }
+

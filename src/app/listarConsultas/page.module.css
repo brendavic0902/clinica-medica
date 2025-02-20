@@ -1,0 +1,50 @@
+.container {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 16px;
+  }
+  
+  .filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filtros input {
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    width: 30%;
+  }
+  
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabela thead {
+    background-color: #1e40af;
+    color: white;
+    text-align: left;
+  }
+  
+  .tabela th, .tabela td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .tabela tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+  }
+  

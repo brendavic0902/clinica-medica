@@ -83,10 +83,10 @@ export default function Header() {
                     <Link href="/listar" className={`${styles.Link}`}>Agendamento</Link>
                     <ul className={styles.submenu}>
                         <li className={styles.lista_submenu}>
-                            <a href="/Pacientes">Listar Consultas</a>
+                        <Link href="/listarConsultas">Listar</Link>
                         </li>
                         <li className={styles.lista_submenu}>
-                            <a href="#">Agendar Consulta</a>
+                        <Link href="/agendamento">Agende sua consulta</Link>
                         </li>
                         <li className={styles.lista_submenu}>
                             <a href="#">Editar Agendamento</a>

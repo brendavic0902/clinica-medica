@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import styles from "./listar.module.css";
 
 
-export default function Afis() {
+export default function Medicos() {
     let [nome,setNome] = useState(undefined)
     let [medicos,setMedicos] = useState([
       ])
