@@ -1,6 +1,6 @@
 
 import "./globals.css";
-import Header from "@/Componentes/Header";
+import Header from "@/Componentes/Header/page.js";
 
 export const metadata = {
   title: "Brenda",
